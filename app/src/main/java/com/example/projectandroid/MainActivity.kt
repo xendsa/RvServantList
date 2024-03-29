@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import com.example.projectandroid.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showRecyclerList() {
         val listHeroAdapter = ListHeroAdapter()
-        binding.rvHeroes.layoutManager = LinearLayoutManager(this)
+        binding.rvHeroes.layoutManager = GridLayoutManager(this, 2)
         binding.rvHeroes.adapter = listHeroAdapter
 
         listHeroAdapter.addHeroList(HeroData.heroList)
