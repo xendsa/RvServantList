@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProjectAndroid</string>
+    <string name="heroes_name">Daftar Servant</string>
+    <string name="description">Deskripsi</string>
+    <string name="about">about</string>
+
+</resources>
